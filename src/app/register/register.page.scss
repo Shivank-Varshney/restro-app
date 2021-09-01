@@ -1,0 +1,64 @@
+#login {
+  background-image: url(../../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .down-banner {
+    background-color: #fff;
+    height: 180px;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    .down-banner-logo {
+      height: 120px;
+    }
+  }
+  form {
+    margin: 50px 0;
+    .form-label {
+      color: rgba(255, 255, 255, 0.857);
+      font-family: Helvetica, sans-serif;
+      font-size: 13px;
+      text-transform: capitalize;
+    }
+    .form-check-label {
+      color: rgba(255, 255, 255, 0.857);
+      font-family: Helvetica, sans-serif;
+      font-size: 13px;
+      span {
+        color: #fff;
+        font-weight: bolder;
+      }
+    }
+    .form-control {
+      border-radius: 40px;
+      box-shadow: none;
+      padding: 4px 10px;
+      &::placeholder {
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      &:focus {
+        border: 1px solid #f58634;
+      }
+    }
+    .form-check-input {
+      border: 2px solid #fff;
+      background-color: transparent;
+      box-shadow: none;
+      margin: 0 5px 0 0;
+      font-size: 14px;
+      font-family: Helvetica, sans-serif;
+    }
+    .sign-up-btn {
+      background-color: #000;
+      color: #fff;
+      font-family: Helvetica, sans-serif;
+      text-transform: uppercase;
+      border-radius: 10px;
+      padding: 5px 30px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#splash-screen {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .logo {
+    height: 150px;
+  }
+  .middle-section {
+    padding: 70px 0;
+    .cooking-food {
+      height: 60px;
+    }
+    .welcome-greet {
+      font-family: Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #000;
+      text-transform: capitalize;
+    }
+    .sub-heading {
+      color: #f58634;
+      font-family: Helvetica, sans-serif;
+    }
+  }
+  .order-accepting-heading {
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

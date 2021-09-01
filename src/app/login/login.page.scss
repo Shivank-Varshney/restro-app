@@ -1,0 +1,68 @@
+#login {
+  background-image: url(../../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  .down-banner {
+    background-color: #fff;
+    height: 180px;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    .down-banner-logo {
+      height: 120px;
+    }
+  }
+  form {
+    margin: 70px 0 0;
+    .form-label {
+      color: rgba(255, 255, 255, 0.857);
+      font-family: Helvetica, sans-serif;
+      font-size: 13px;
+      text-transform: capitalize;
+    }
+    .form-control {
+      border-radius: 40px;
+      box-shadow: none;
+      padding: 4px 10px;
+      &::placeholder {
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      &:focus {
+        border: 1px solid #f58634;
+      }
+    }
+    .form-text{
+        color: rgba(255, 255, 255, 0.857);
+        text-align: end;
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    .log-in-btn {
+      background-color: #000;
+      color: #fff;
+      font-family: Helvetica, sans-serif;
+      text-transform: uppercase;
+      border-radius: 10px;
+      padding: 5px 30px;
+      margin: 20px 0 40px;
+    }
+  }
+  .new-user-text{
+    color: rgba(255, 255, 255, 0.857);
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    span{
+        color: #fff;
+        font-weight: bolder;
+    }
+  }
+}

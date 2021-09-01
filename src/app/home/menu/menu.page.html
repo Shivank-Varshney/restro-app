@@ -1,0 +1,260 @@
+<ion-content>
+  <div id="menu">
+    <div class="container">
+      <!-- Header Section Start -->
+      <div class="row">
+        <div class="col-3 p-3">
+          <img
+            src="../../../assets/logo.svg"
+            class="img-fluid restro-logo"
+            alt=" restaurant logo"
+            routerLink="/home"
+          />
+        </div>
+        <div class="col-6 p-3">
+          <div class="restro-name">Restaurant Name</div>
+          <div class="restro-address">Full Address</div>
+        </div>
+        <div class="col-3 p-3">
+          <img
+            src="../../../assets/online.svg"
+            class="img-fluid restro-logo"
+            alt=" restaurant logo"
+          />
+        </div>
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Banner Section Start -->
+      <div class="row">
+        <div class="col-12">
+          <div class="account-banner"></div>
+        </div>
+      </div>
+      <!-- Banner Section End -->
+
+      <!-- Desc Section Start -->
+      <div class="row">
+        <div class="col-6">
+          <div class="desc-section-left">
+            <div class="restro-name">Restaurant Name</div>
+            <div class="location">Location</div>
+            <div class="options">
+              <div class="all-items">all items</div>
+              <div class="stock">Out of stock</div>
+            </div>
+            <div class="category">catergory</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="desc-section-right">
+            <form>
+              <div class="search-box">
+                <input type="search" placeholder="search" />
+                <div class="search-icon">
+                  <img
+                    src="../../../assets/search.svg"
+                    class="img-fluid"
+                    alt="search icon"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="add-section">add item <span>+</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- Desc Section End -->
+
+      <!-- Category Desc Section Start -->
+      <!-- First -->
+      <div class="category-desc">
+        <div class="upper-section">
+          <div class="row">
+            <div class="col-9 desc">
+              <div class="name">
+                <img
+                  src="../../../assets/veg.svg"
+                  class="img-fluid veg-icon"
+                  alt="veg icon"
+                />Name
+              </div>
+              <div class="amount">amount</div>
+              <div class="description">description</div>
+            </div>
+            <div class="col-3 img-sect">
+              <img
+                src="../../../assets/add_image.svg"
+                class="img-fluid"
+                alt="add image icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <ul>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/recommended.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">recommended</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/customize_selected.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">customizable</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/customize.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">in stock</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/edit.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">edit</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Second -->
+      <div class="category-desc">
+        <div class="upper-section">
+          <div class="row">
+            <div class="col-9 desc">
+              <div class="name">
+                <img
+                  src="../../../assets/veg.svg"
+                  class="img-fluid veg-icon"
+                  alt="veg icon"
+                />Name
+              </div>
+              <div class="amount">amount</div>
+              <div class="description">description</div>
+            </div>
+            <div class="col-3 img-sect">
+              <img
+                src="../../../assets/add_image.svg"
+                class="img-fluid"
+                alt="add image icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <ul>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/recommended.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">recommended</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/customize_selected.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">customizable</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/customize.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">in stock</div>
+            </li>
+            <li>
+              <div class="icon">
+                <img
+                  src="../../../assets/edit.svg"
+                  class="img-fluid"
+                  alt="icon"
+                />
+              </div>
+              <div class="name">edit</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Category Desc Section End -->
+    </div>
+  </div>
+
+  <!-- Navbar Start -->
+  <div class="navbar">
+    <ul>
+      <li routerLink="/home">
+        <div class="icon">
+          <img
+            src="../../../assets/menu.svg"
+            class="img-fluid"
+            alt="menu icon"
+          />
+        </div>
+        <div class="name">menu</div>
+      </li>
+      <li routerLink="/home/orders">
+        <div class="icon">
+          <img
+            src="../../../assets/order.svg"
+            class="img-fluid"
+            alt="orders icon"
+          />
+        </div>
+        <div class="name">orders</div>
+      </li>
+      <li routerLink="/home/account">
+        <div class="icon">
+          <img
+            src="../../../assets/account.svg"
+            class="img-fluid"
+            alt="account icon"
+          />
+        </div>
+        <div class="name">account</div>
+      </li>
+      <li routerLink="/home/history">
+        <div class="icon">
+          <img
+            src="../../../assets/history.svg"
+            class="img-fluid"
+            alt="history icon"
+          />
+        </div>
+        <div class="name">history</div>
+      </li>
+    </ul>
+  </div>
+  <!-- Navbar Start End -->
+</ion-content>

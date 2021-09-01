@@ -1,0 +1,42 @@
+<ion-content>
+  <div id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 mx-auto">
+          <div class="down-banner">
+            <img
+              src="../../assets//logo.svg"
+              class="img-fluid down-banner-logo"
+              alt="restaurant logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <form>
+            <div class="mb-2">
+              <label for="InputOTP" class="form-label">Enter OTP</label>
+              <input
+                type="password"
+                class="form-control"
+                id="InputOTP"
+                placeholder="Please enter OTP"
+              />
+              <div class="form-text">didn't receive an OTP? <span>Resend</span></div>
+            </div>
+            <div class="d-flex">
+              <button
+                type="submit"
+                class="btn log-in-btn mx-auto"
+                routerLink="/home"
+              >
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

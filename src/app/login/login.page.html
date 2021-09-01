@@ -1,0 +1,52 @@
+<ion-content>
+  <div id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 mx-auto">
+          <div class="down-banner">
+            <img
+              src="../../assets//logo.svg"
+              class="img-fluid down-banner-logo"
+              alt="restaurant logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <form>
+            <div class="mb-2">
+              <label for="InputName" class="form-label">user name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InputName"
+                placeholder="Enter user name"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="InputNumber" class="form-label">password</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="InputNumber"
+                placeholder="Enter your password"
+              />
+              <div class="form-text">forget password?</div>
+            </div>
+            <div class="d-flex">
+              <button
+                type="submit"
+                class="btn log-in-btn mx-auto"
+                routerLink="/otp"
+              >
+                log in
+              </button>
+            </div>
+          </form>
+          <p class="new-user-text" routerLink="/register">new user? <span>apply now</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
