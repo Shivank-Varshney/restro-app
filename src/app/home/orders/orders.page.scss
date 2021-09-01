@@ -1,63 +1,217 @@
 #menu {
-    min-height: 100vh;
-    background-color: #fff;
-    padding: 10px 10px 0;
-    .restro-logo{
-        height: 50px;
-    }
-    .restro-name{
-        font-weight: bolder;
-        font-family: Helvetica, sans-serif;
-        font-size: 15px;
-        text-align: center;
-        margin: 5px 0 0 0;
-    }
-    .restro-address{
-        font-weight: 500;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 10px 10px 0;
+  .restro-logo {
+    height: 50px;
+  }
+  .restro-name {
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+  .restro-address {
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  //   Sub Header
+  .desc-section {
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .restro-name {
+      font-weight: bolder;
       font-family: Helvetica, sans-serif;
-      font-size: 14px;
-      text-align: center;
-  }
-  }
-  
-  // Navbar Styling
-  .navbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background-image: linear-gradient(#a92f08, #f18232);
-    margin: 7px 10px;
-    border-radius: 20px;
-    ul{
-        width: 100%;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    form {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li{
-          .icon{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              img{
-                  height: 20px;
-              }
-              // &:hover{
-              //     background-image: linear-gradient(#a92f08, #f18232);
-              // }
+      justify-content: flex-end;
+      .search-box {
+        display: flex;
+        padding: 0 10px;
+        border-radius: 8px;
+        background-color: #d9d9d9;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          font-family: Helvetica, sans-serif;
+          background-color: transparent;
+          border: none;
+          color: #000;
+          width: 100%;
+          height: 20px;
+          font-size: 12px;
+          &::placeholder {
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            text-transform: capitalize;
+            color: #818181;
           }
-          .name{
-              color: rgba(255, 255, 255, 0.789);
-              font-family: Helvetica, sans-serif;
-              text-transform: capitalize;
-              font-size: 13px;
-              margin: 7px 0 0 0;
+          &:focus {
+            border: none;
+            outline: none;
           }
+        }
+        .search-icon {
+          img {
+            height: 20px;
+          }
+        }
       }
     }
   }
-  
+
+  //   Order details
+  .order-details {
+    margin: 10px 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        background-color: #d9d9d9;
+        color: #7c7c7c;
+        padding: 0 10px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        &:hover {
+          background-color: #f58634;
+          color: #000;
+        }
+      }
+      .active {
+        background-color: #f58634;
+        color: #000;
+      }
+    }
+  }
+
+  //   Card Section
+  .detail-card {
+    border: 1px solid #b8b7b7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #d9d9d9;
+    margin: 15px 0 0 0;
+    .header-section {
+      padding: 5px 10px;
+      border-bottom: 1px solid #b8b7b7;
+      .id {
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        span {
+          color: #f58634;
+        }
+      }
+      .state {
+        display: flex;
+        margin: 4px 0 0 0;
+        .delivered {
+          font-family: Helvetica, sans-serif;
+          font-size: 10px;
+          text-transform: uppercase;
+          background-color: #f58634;
+          color: #fff;
+          padding: 0 3px;
+          margin: 0 5px 0 0;
+        }
+        .cust-name {
+          font-family: Helvetica, sans-serif;
+          font-size: 10px;
+          text-transform: capitalize;
+          color: #f58634;
+        }
+      }
+      .date {
+        font-family: Helvetica, sans-serif;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: 16px;
+      }
+    }
+    .card-flip-section {
+      padding: 5px 10px;
+      border-bottom: 1px solid #b8b7b7;
+      .food-item {
+        font-family: Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 13px;
+        color: #000;
+      }
+      .arrow {
+        height: 15px;
+      }
+    }
+    .card-desc-section {
+      padding: 5px 10px;
+      border-bottom: 1px solid #b8b7b7;
+      .price,
+      .desc {
+        font-size: 11px;
+        font-family: Helvetica, sans-serif;
+        color: #b8b7b7;
+      }
+      .price-bill,
+      .desc-bill {
+        font-size: 11px;
+        font-family: Helvetica, sans-serif;
+        color: #f58634;
+      }
+    }
+  }
+}
+
+// Navbar Styling
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-image: linear-gradient(#a92f08, #f18232);
+  margin: 7px 10px;
+  border-radius: 20px;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 20px;
+        }
+        // &:hover{
+        //     background-image: linear-gradient(#a92f08, #f18232);
+        // }
+      }
+      .name {
+        color: rgba(255, 255, 255, 0.789);
+        font-family: Helvetica, sans-serif;
+        text-transform: capitalize;
+        font-size: 13px;
+        margin: 7px 0 0 0;
+      }
+    }
+  }
+}
