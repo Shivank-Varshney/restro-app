@@ -46,6 +46,20 @@
     }
   }
 }
+@media screen and (max-width: 360px) {
+  #menu {
+    padding: 10px 5px 0;
+    .restro-logo {
+      height: 40px;
+    }
+    .restro-name {
+      font-size: 13px;
+    }
+    .restro-address {
+      font-size: 11px;
+    }
+  }
+}
 
 // Navbar Styling
 .navbar {
@@ -56,7 +70,7 @@
   height: 80px;
   background-image: linear-gradient(#a92f08, #f18232);
   margin: 7px 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   ul {
     width: 100%;
     display: flex;
@@ -83,6 +97,25 @@
         text-transform: capitalize;
         font-size: 13px;
         margin: 7px 0 0 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar {
+    height: 60px;
+    margin: 5px 8px;
+    ul {
+      li {
+        .icon {
+          img {
+            height: 18px;
+          }
+        }
+        .name {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
       }
     }
   }

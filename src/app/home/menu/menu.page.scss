@@ -51,6 +51,7 @@
         margin: 0 2px 0 0;
         text-transform: capitalize;
         background-color: #f58634;
+        cursor: pointer;
       }
       .stock {
         font-family: Helvetica, sans-serif;
@@ -61,6 +62,11 @@
         text-transform: capitalize;
         background-color: #d9d9d9;
         color: #818181;
+        cursor: pointer;
+        &:hover{
+          background-color: #f58634;
+          color: #000;
+        }
       }
     }
     .category {
@@ -105,6 +111,7 @@
           }
         }
         .search-icon {
+          cursor: pointer;
           img {
             height: 20px;
           }
@@ -179,6 +186,7 @@
             img {
               height: 15px;
               margin: 0 5px 0 0;
+              cursor: pointer;
             }
           }
           .name {
@@ -186,6 +194,35 @@
             font-size: 10px;
             text-transform: capitalize;
             color: #737373;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  #menu {
+    padding: 10px 5px 0;
+    .restro-logo {
+      height: 40px;
+    }
+    .restro-name {
+      font-size: 13px;
+    }
+    .restro-address {
+      font-size: 11px;
+    }
+  
+    //  Category Desc Sectiopn
+    .category-desc {
+      .bottom-section {
+        ul {
+          li {
+            .icon {
+              img {
+                height: 12px;
+              }
+            }
           }
         }
       }
@@ -202,7 +239,7 @@
   height: 80px;
   background-image: linear-gradient(#a92f08, #f18232);
   margin: 7px 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   ul {
     width: 100%;
     display: flex;
@@ -229,6 +266,25 @@
         text-transform: capitalize;
         font-size: 13px;
         margin: 7px 0 0 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar {
+    height: 60px;
+    margin: 5px 8px;
+    ul {
+      li {
+        .icon {
+          img {
+            height: 18px;
+          }
+        }
+        .name {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
       }
     }
   }

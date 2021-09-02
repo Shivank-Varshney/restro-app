@@ -141,6 +141,15 @@
         font-weight: bolder;
         text-transform: capitalize;
         font-size: 16px;
+        text-align: end;
+      }
+      .icons{
+        display: flex;
+        justify-content: flex-end;
+        .icon{
+          height: 18px;
+          margin: 5px 6px;
+        }
       }
     }
     .card-flip-section {
@@ -153,7 +162,8 @@
         color: #000;
       }
       .arrow {
-        height: 15px;
+        height: 8px;
+        margin: 4px 0 0 0;
       }
     }
     .card-desc-section {
@@ -171,6 +181,128 @@
         font-family: Helvetica, sans-serif;
         color: #f58634;
       }
+      .order-ready{
+        font-family: Helvetica, sans-serif;
+        background-color: #f58634;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 6px 4px;
+        padding: 4px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+    }
+    .delievry-section {
+      padding: 5px 10px;
+      .delievry-partner {
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        text-transform: capitalize;
+        img {
+          height: 16px;
+          margin: 0 5px 0 0;
+        }
+      }
+      .partner-detail {
+        display: flex;
+        margin: 4px 0;
+        .img {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background-color: #f58634;
+          margin: 0 8px 0 0;
+        }
+        .details {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          .name,
+          .otp {
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+          }
+        }
+      }
+      .call-icon{
+        height: 20px;
+      }
+      .order-reach{
+        font-family: Helvetica, sans-serif;
+        background-color: #f58634;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 7px 4px;
+        padding: 4px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #menu {
+    //   Order details
+    .order-details {
+      ul {
+        li {
+          font-size: 13px;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #menu {
+    padding: 10px 5px 0;
+    .restro-logo {
+      height: 40px;
+    }
+    .restro-name {
+      font-size: 13px;
+    }
+    .restro-address {
+      font-size: 11px;
+    }
+
+    //   Sub Header
+    .desc-section {
+      margin: 4px 0 0 0;
+      .restro-name {
+        font-size: 16px;
+      }
+      form {
+        .search-box {
+          padding: 0 8px;
+          input {
+            height: 18px;
+            font-size: 12px;
+          }
+          .search-icon {
+            img {
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    //   Order details
+    .order-details {
+      margin: 8px 0;
+      ul {
+        li {
+          font-size: 11px;
+          padding: 0 7px;
+        }
+      }
     }
   }
 }
@@ -184,7 +316,7 @@
   height: 80px;
   background-image: linear-gradient(#a92f08, #f18232);
   margin: 7px 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   ul {
     width: 100%;
     display: flex;
@@ -211,6 +343,25 @@
         text-transform: capitalize;
         font-size: 13px;
         margin: 7px 0 0 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar {
+    height: 60px;
+    margin: 5px 8px;
+    ul {
+      li {
+        .icon {
+          img {
+            height: 18px;
+          }
+        }
+        .name {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
       }
     }
   }
